@@ -1,0 +1,124 @@
+.secao__recentes {
+    background: var(--cor-gradiente);
+    text-align: center;
+    padding: 1.5em 0em;
+}
+
+.secao__recentes__titulo {
+    color: var(--cor-primaria);
+    font-weight: 300;
+    padding: 1em;
+}
+
+.secao__recentes__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.secao__recentes__lista__item {
+    margin: 1.7em 0.5em;
+}
+
+.secao__recentes__lista__item__botao {
+    color: var(--cor-primaria);
+    padding: 1em;
+    background-color: var(--cor-destaque);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.secao__news {
+    background-color: var(--cor-primaria);
+    padding: 1em;
+}
+
+.secao__news__conteudo {
+    background: var(--cor-gradiente);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secao__news__titulo {
+    font-size: 18px;
+    font-family: 500;
+}
+
+.secao__news__texto {
+    font-weight: 300;
+    margin: 1em 0em;
+}
+
+.secao__news__email {
+    background-color: transparent;
+    border: 1px solid #002F52;
+    border-radius: 24px;
+    padding: 0.5em;
+    margin: 1em 0em;
+    width: 90%;
+}
+
+.secao__news__email::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    background: url(../assets/Email.svg) no-repeat;
+    background-position: 1em;
+    padding-left: 3em;
+    color: var(--cor-destaque-secundaria);
+}
+
+@media screen and (min-width: 1024px){
+    .secao__recentes__titulo {
+        font-size: 24px;
+    }
+
+    .secao__recentes__lista__item__botao{
+        font-size: 24px;
+    }
+
+    .secao__recentes__lista__item{
+        padding: 1em 0.5em;
+    }
+
+    .secao__news {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0;
+    }
+
+    .secao__news__conteudo {
+        margin-right: 2em;
+        width: 30%;
+    }
+
+    .secao__news__titulo {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .secao__news__email {
+        width: 30%;
+    }
+
+    .secao__news__email {
+        padding: 1em;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .secao__recentes {
+        padding: 2em 25vw;
+    }
+
+    .secao__recentes__titulo {
+        font-size: 32px;
+    }
+
+    .secao__news {
+        padding: 4em 20vw;
+        align-items: center;
+    }
+
+}
